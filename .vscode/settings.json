@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "liveServer.settings.proxy": {
+    "proxyUri": "http://127.0.0.1:5500"
+  },
+  "liveServer.settings.port": 5501
+}

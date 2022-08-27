@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: sans-serif;
+    /* background-color: powderblue; */
+    background-image: url("hand.svg");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+.end{
+    font-family: 'Playball', cursive;
+    text-shadow: -2px 2px 4px;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.arrow1 img{
+    width: 50px;
+    transform: rotate(-90deg);
+    margin-right: 20px;
+}
+.arrow2 img{
+    width: 50px;
+    margin-left: 20px;
+    transform: rotate(90deg);
+}
+.sampul-depan{
+    background-color: #78b7ff;
+    text-align: left;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+.sampul-depan img{
+      transition: .8s;
+      cursor: pointer;
+}
+
+.sampul-depan img:hover{
+    transform: rotate(360deg);
+}
+
+.sampul-belakang{
+    background-color: #78b7ff;
+    text-align: left;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    /* left: -39; */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+.sampul-belakang img{
+      transition: .8s;
+      cursor: pointer;
+}
+
+.sampul-belakang img:hover{
+    transform: rotate(360deg);
+}
+/* Book */
+.book {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+
+}
+
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    border-radius: 30px;
+    /* box-shadow: -5px 2px 1px hsl(35, 68%, 39%); */
+    border: 3px solid rgb(243, 178, 36);
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    /* border-left: 3px solid powderblue; */
+}
+
+.back {
+    z-index: 0;
+    
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    /* display: grid; */
+    margin-top: 20px;
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.foto img{
+    width: 350px;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+.foto2 img{
+    margin-top: 50px;
+    width: 250px;
+    border-radius: 150px;
+    border: 3px solid rgb(243, 178, 36);
+}
+.gif img{
+  margin-bottom: 60px;
+
+}
+.text{
+    padding: 0px 20px;
+    line-height: 20px;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Amaranth', sans-serif;
+}
+.name{
+    margin-top: 20px;
+    font-family: 'Acme', sans-serif;
+}
+.back-content {
+    transform: rotateY(180deg);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #636363;
+}
+
+i {
+    font-size: 100px;
+    color: gray;
+}
+#arrow{
+    font-size: 40px;
+    margin: 0px 30px;
+}
+/* Paper stack order */
+#p1 {
+    z-index: 4;
+}
+
+#p2 {
+    z-index: 3;
+}
+
+#p3 {
+    z-index: 2;
+}
+#p4{
+    z-index: 1;
+}
+
+
+
+/* .container1{
+    display: inherit;
+} */
+.arrow1, .arrow2{
+        display: inherit;
+    }
+
+
+   .container{
+    display: none;
+    /* position: relative; */
+}
+
+/* mobile version */
+
+
+@media(max-width: 786px){
+    body {
+    /* height: 100%; */
+    display: inherit;
+}
+    .container1{
+        display: none;
+    }
+    .arrow1, .arrow2{
+        display: none;
+    }
+    .atas{
+        margin-top: 150px;
+    }
+    .box img{
+        /* width: 250px; */
+        width: 300px;
+    }
+    .ribbon img{
+        width: 100px;
+    }
+
+
+    .container{
+    display: inherit;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* position: relative; */
+}
+.image{
+    width: 40px;
+}
+
+
+.box img{
+    border: 3px solid rgb(243, 178, 36);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+}
+
+
+/* musik */
+.tampil {
+    z-index: 99999999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: black;
+}
+.tampil-body {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+}
+
+.tampil-body div {
+	border-radius: 20px;
+	padding: 20px;
+	margin: auto;
+	width: 50%;
+	background-color: white;
+}
+.tampil-body button {
+	cursor: pointer;
+	font-size: 1.1em;
+	text-align: center;
+	border-radius: 20px;
+	border: 0;
+	margin-top: 20px;
+
+	/* color: white; */
+	padding: 10px;
+}
+

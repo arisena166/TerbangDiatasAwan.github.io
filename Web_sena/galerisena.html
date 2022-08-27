@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="galerisena.css">
+
+	<!-- bootstrap -->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="../font/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+	<!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+
+	<!-- fontawesome -->
+	<!-- <link rel="stylesheet" href="../font/css/all.min.css"> -->
+	
+    <title>Ari Sena</title>
+</head>
+<body>
+
+	<!-- <div class="tampil" id="tampil">
+		<div class="tampil-body">
+			<div>
+				<h1>jangan di liat ya....</h1>
+				<button onclick=" putarmusic()" class="btn btn-primary">Kembali</button>
+			</div>
+		</div>
+	</div> -->
+
+    <div class="nav-banner">
+
+		<!-- navbar -->
+		<div class="nav-side text-center">
+			<!-- <img class="foto" src="../sena/foto2.jpg" alt=""> -->
+			<nav class="nav flex-column">
+				<a class="nav-link active" aria-current="page" href="#banner"><img class="iron" src="iron.svg" alt=""></a>
+				<a class="nav-link" href="#about"><img src="about.svg" alt=""></a>
+				<a class="nav-link" href="#galeri"><img src="picture.svg" alt=""></a>
+			</nav>
+			<div class="back">
+				<a class="nav-link" href="../front.html"><img src="arrow-left.svg" alt=""></a>
+			</div>
+		</div>
+
+		<!-- navbar button -->
+		<a class="button1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="menu.svg" alt=""></a>
+
+		<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+		<!-- <div class="offcanvas-header close"> -->
+			
+		<!-- </div> -->
+		<div class="offcanvas-body text-center">
+			<div class="close">
+				<a class="text-reset close4" data-bs-dismiss="offcanvas" aria-label="Close"><img src="close.svg" alt=""></a>
+			</div>
+			<div class="canva">
+				<img class="foto2" src="../sena/foto2.jpg" alt="">
+				<nav class="nav flex-column">
+				<a class="nav-link active" aria-current="page" href="#banner">Sena</a>
+				<a class="nav-link" href="#about">Warning</a>
+				<a class="nav-link" href="#">Galeri</a>
+			</nav>
+			</div>
+		</div>
+		
+		</div>
+		<!-- end -->
+		<!-- banner -->
+		<div class="banner" id="banner">
+			<div class="image">
+				<img class="img-fluid" src="background/laptop3.svg" alt="">
+			</div>
+
+			<div class="title">
+				<h1 class="name">
+					Ari Sena
+				</h1>
+				<p>
+					
+				</p>
+			</div>
+		</div>
+		<!-- end -->
+	</div>
+
+	<!-- warning -->
+	<div class="warning" id="about">
+			<div class="warning-bot">
+				<img src="bot/calls.svg" alt="">
+			</div>
+
+			<div class="warning-text">
+				<h4>Kutipan</h4>
+				<p>
+					Hi Nana, pada Halaman ini Kamu akan melihat semua foto dari galeri Arisena maka dari itu ucapkan Bismillahirrahmanirrahim dan hati-hati jika membuka foto Ari Sena, foto-foto ini akan mengundang ketawa para Usernya sekian dan terima kasih.
+				</p>
+			</div>
+	</div>
+
+	<div class="about">
+		<div class="row align-items-center box1">
+
+			<div class="col-md-6 bot">
+				<img src="bot/bot1.svg" alt="">
+			</div>
+
+			<div class="col-md-6">
+				<h4 class="text-center">Ari Sena</h4>
+				<ul>
+                        <li>Hobi : Nyanyi, Ngoding, Design ilustrasi.</li>
+                        <li>Cita-cita : menjadi seorang Web/Mobile Developer.</li>
+                        <li>Makanan Kesukaan : Nasi Goreng, bakso, apapun itu yang penting kenyang.</li>
+                        <li>Minuman kesukaan : Lemon tea, Es jeruk, Jus Aple, Teh, Air putih.</li>
+                        <li>Hewan kesukaan : Kucing (di rumah ku ada 2,Mueza sama Izan mereka itu preman jalanan yang selalu kompak malak makanan kucing lain).</li>
+						<li>Fans/penggemar : Rasulullah SAW, Ali bin Abi Thalib, Ukasyah, Umar Ra.</li>
+                    </ul>
+			</div>
+		</div>
+
+		</div>
+	
+		<!-- image bot -->
+		
+		<!-- galeri -->
+	<div class="wrapper" id="galeri">
+		<div class="bot-image">
+			<h2>PICTURE</h2>
+			<img src="bot/picture.svg" alt="">
+		</div>
+    <!-- filter Items -->
+    <nav>
+      <div class="items">
+        <span class="item active" data-name="all">All</span>
+        <span class="item" data-name="smp">SMP</span>
+        <span class="item" data-name="sma">SMA</span>
+      </div>
+    </nav>
+    <!-- filter Images -->
+    <div class="gallery">
+
+
+	  <!-- smp -->
+      <div class="image" data-name="smp"><span><img src="images/1/1.jpg" alt=""></span>
+	  </div>
+
+	  <div class="image" data-name="smp"><span><img src="images/1/2.jpg" alt=""></span>
+	  </div>
+
+	  <div class="image" data-name="smp"><span><img src="images/1/3.jpg" alt=""></span>
+	  </div>
+
+	  <div class="image" data-name="smp"><span><img src="images/1/4.jpg" alt=""></span>
+	  </div>
+
+	  <div class="image" data-name="smp"><span><img src="images/1/5.jpg" alt=""></span>
+	  </div>
+
+	  <div class="image" data-name="smp"><span><img src="images/1/6.jpg" alt=""></span>
+	  </div>
+
+	  <div class="image" data-name="smp"><span><img src="images/1/7.jpg" alt=""></span>
+	  </div>
+
+	  <div class="image" data-name="smp"><span><img src="images/1/8.jpg" alt=""></span>
+	  </div>
+
+	  <div class="image" data-name="smp"><span><img src="images/1/9.jpg" alt=""></span>
+	  </div>
+
+	  <div class="image" data-name="smp"><span><img src="images/1/10.jpg" alt=""></span>
+	  </div>
+
+	  <div class="image" data-name="smp"><span><img src="images/1/11.jpg" alt=""></span>
+	  </div>
+
+
+	  <!-- sma -->
+      <div class="image" data-name="sma"><span><img src="images/2/1.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/2.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/3.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/4.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/5.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/6.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/7.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/8.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/9.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/10.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/11.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/12.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/13.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/14.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/15.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/16.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/17.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/18.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/19.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/20.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/21.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/22.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/23.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/24.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/25.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/26.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/27.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/28.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/29.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/30.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/31.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/32.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/33.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/34.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/35.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/36.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/37.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/38.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/39.jpeg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/40.jpeg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/41.jpeg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/42.jpeg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/43.jpeg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/44.jpeg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/45.jpeg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/46.jpeg" alt=""></span></div>
+	  
+	  <div class="image" data-name="sma"><span><img src="images/2/47.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/48.jpg" alt=""></span></div>
+
+	  <!-- <div class="image" data-name="sma"><span><img src="images/2/49.jpg" alt=""></span></div> -->
+
+	  <div class="image" data-name="sma"><span><img src="images/2/50.jpg" alt=""></span></div>
+
+	  <div class="image" data-name="sma"><span><img src="images/2/51.jpg" alt=""></span></div>
+	  
+    </div>
+  </div>
+  <!-- fullscreen img preview box -->
+  <div class="preview-box">
+    <div class="details">
+      <span class="title">Image Category: <p></p></span>
+      <span class="icon">
+		  <span class="left"></span>
+		  <span class="right"></span>
+	  </span>
+    </div>
+    <div class="image-box"><img src="" alt=""></div>
+  </div>
+  <div class="shadow"></div>
+
+
+    <script>
+		var a = document.getElementById('tampil');
+		function putarmusic(){
+			window.location.href = "../front.html"
+		}
+	</script>
+	<script src="script.js"></script>
+	<!-- <script src="../font/js/all.min.js"></script> -->
+</body>
+</html>
+

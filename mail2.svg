@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="875.322px" height="842.955px" viewBox="0 0 875.322 842.955" enable-background="new 0 0 875.322 842.955"
+	 xml:space="preserve">
+<g id="BACKGROUND">
+	<g>
+		
+			<image overflow="visible" opacity="0.24" width="904" height="863" xlink:href="552075DB.png"  transform="matrix(1 0 0 1 -1.6104 9)">
+		</image>
+		<g>
+			<rect x="0.39" y="11" fill="#B3B3B3" width="873" height="832"/>
+		</g>
+	</g>
+</g>
+<g id="OBJECTS">
+	<defs>
+		<rect id="SVGID_1_" x="0.39" y="12" width="875" height="832"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<rect x="0.39" y="12" clip-path="url(#SVGID_2_)" fill="#FFFFFF" width="875" height="832"/>
+	<g clip-path="url(#SVGID_2_)">
+		<polygon fill="#F0635C" points="0.001,33.556 78.822,-99.498 42.238,-99.498 0.001,-28.204 		"/>
+		<polygon fill="#337196" points="0.001,203.459 179.466,-99.499 142.881,-99.499 0.001,141.7 		"/>
+		<polygon fill="#F0635C" points="0.001,373.358 280.111,-99.499 243.529,-99.499 0.001,311.603 		"/>
+		<polygon fill="#337196" points="0.001,543.259 380.76,-99.499 344.177,-99.499 0.001,481.5 		"/>
+		<polygon fill="#F0635C" points="0.001,713.164 481.402,-99.498 444.821,-99.498 0.001,651.405 		"/>
+		<polygon fill="#337196" points="0.001,883.063 582.053,-99.499 545.467,-99.499 0.001,821.312 		"/>
+		<polygon fill="#F0635C" points="646.114,-99.499 0,991.21 0,1001.787 30.317,1001.787 682.699,-99.499 		"/>
+		<polygon fill="#337196" points="130.96,1001.787 783.344,-99.499 746.761,-99.499 94.381,1001.787 		"/>
+		<polygon fill="#F0635C" points="231.608,1001.787 877.925,-89.266 877.925,-99.499 847.407,-99.499 195.028,1001.787 		"/>
+		<polygon fill="#337196" points="332.257,1001.787 877.925,80.637 877.925,18.878 295.672,1001.787 		"/>
+		<polygon fill="#F0635C" points="432.902,1001.787 877.925,250.541 877.925,188.782 396.32,1001.787 		"/>
+		<polygon fill="#337196" points="533.545,1001.787 877.925,420.438 877.925,358.686 496.963,1001.787 		"/>
+		<polygon fill="#F0635C" points="634.192,1001.787 877.925,590.342 877.925,528.577 597.61,1001.787 		"/>
+		<polygon fill="#337196" points="734.839,1001.787 877.925,760.239 877.925,698.487 698.253,1001.787 		"/>
+		<polygon fill="#F0635C" points="835.489,1001.787 877.925,930.142 877.925,868.385 798.899,1001.787 		"/>
+	</g>
+	<rect x="22.39" y="60" clip-path="url(#SVGID_2_)" fill="#FFFAE9" width="820" height="739"/>
+</g>
+</svg>

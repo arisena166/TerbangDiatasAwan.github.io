@@ -1,0 +1,501 @@
+ 
+<html>
+ 
+<head>
+        <title>Catatan Harian</title>
+         
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    
+    
+
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+ 
+ 
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+		<script src="booklet/jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="booklet/jquery.booklet.1.1.0.min.js" type="text/javascript"></script>
+
+		<link href="booklet/jquery.booklet.1.1.0.css" type="text/css" rel="stylesheet" media="screen" />
+		<link rel="stylesheet" href="../musik.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="../style.css">
+		 
+		<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		 <!-- musik -->
+		 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		 <style>
+         
+              *{
+	margin:0;
+	padding:0;
+}
+body{
+	/* background:#497fce;	 */
+	background-image: url("backbook.svg");
+	background-size: cover;
+	color:#444;
+	font-size:12px;
+	color: #333;
+    font-family: 'Oswald', sans-serif;
+}
+ 
+ 
+.booklet           {
+	width:900px;
+	height:607px;
+	position:relative;
+	margin:0 auto 10px;
+	-moz-box-shadow:0px 0px 1px #fff;
+	-webkit-box-shadow:0px 0px 1px #fff;
+	box-shadow:0px 0px 1px #fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+.booklet .b-wrap-left  {
+	background:#fff url(images/left_bg.jpg) no-repeat top left;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.booklet .b-wrap-right {
+	background:#efefef url(images/right_bg.jpg) no-repeat top left;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.booklet .b-counter {
+	bottom:10px;
+	position:absolute;
+	display:block;
+	width:90%;
+	height:20px;
+	border-top:1px solid #ddd;
+	color:#222;
+	text-align:center;
+	font-size:12px;
+	padding:5px 0 0;
+	background:transparent;
+	-moz-box-shadow:0px -1px 1px #fff;
+	-webkit-box-shadow:0px -1px 1px #fff;
+	box-shadow:0px -1px 1px #fff;
+	opacity:0.8;
+}
+.book_wrapper{
+	margin:0 auto;
+	padding-top:50px;
+	width:905px;
+	height: 700px;
+	/* height: 1200px; */
+	position:relative;
+	background:transparent url(images/bg.png) no-repeat 9px 27px;
+}
+.book_wrapper h1{
+	color:orange;
+	margin:5px 5px 5px 15px;
+	font-size:24px;
+	background:transparent url(images/h1.png) no-repeat bottom left;
+	padding-bottom:7px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.book_wrapper p{
+	font-size:15px;
+	margin:5px 5px 5px 15px;
+}
+.book_wrapper a.article,
+.book_wrapper a.demo{
+	background:transparent url(images/circle.png) no-repeat 50% 0px;
+	display:block;
+	width:95px;
+	height:41px;
+	text-decoration:none;
+	outline:none;
+	font-size:16px;
+	color:#555;
+	float:left;
+	line-height:41px;
+	padding-left:47px;
+}
+.book_wrapper a.demo{
+	margin-left:50px;
+}
+.book_wrapper a.article:hover,
+.book_wrapper a.demo:hover{
+	background-position:50% -41px;
+	color:#13386a;
+}
+.book_wrapper img{
+	margin:10px 0px 5px 35px;
+	width:300px;
+	padding:4px;
+	border:1px solid #ddd;
+	-moz-box-shadow:1px 1px 1px #fff;
+	-webkit-box-shadow:1px 1px 1px #fff;
+	box-shadow:1px 1px 1px #fff;
+}
+.booklet .b-wrap-right img{
+	border:1px solid #E6E3C2;
+}
+a#next_page_button,
+a#prev_page_button{
+	display:none;
+	position:absolute;
+	width:41px;
+	height:40px;
+	cursor:pointer;
+	margin-top:-20px;
+	top:50%;
+	background:transparent url(images/buttons.png) no-repeat 0px -40px;
+}
+a#prev_page_button{
+	left:-30px;
+}
+a#next_page_button{
+	right:-30px;
+	background-position:-41px -40px;
+}
+a#next_page_button:hover{
+	background-position:-41px 0px;
+}
+a#prev_page_button:hover{
+	background-position:0px 0px;
+}
+.back{
+	margin-right: 30px;
+}
+ 
+    
+    
+         </style>
+		 
+    </head>
+    <body>
+
+    <br><br><br><br><br>
+		 
+		<div class="book_wrapper">
+			<a id="next_page_button"></a>
+			<a id="prev_page_button"></a>
+			 
+			<div id="mybook" style="display:none;">
+				<div class="b-load">
+					<div>
+						<img src="../pemandangan/pohon.jpg" alt=""/>
+						<h1>24 Februari 2022</h1>
+						<p>haaaaah.....selesai juga buat websitenya, Na..selamat ulang tahun ya, semoga kamu cepat (tumbuh), tumbuh menjadi wanita yang sholehah, tumbuh dan selalu berbakti kepada kedua orang tua, tumbuh sampai meraih cita-cita, tumbuh sampai sukses,dan akan selalu tumbuh, tumbuh dan tumbuh seperti pohon,sampai pohon itu menjadi hijau (panjang umur),</p>
+					</div>
+					<div>
+						<p> sampai pohon itu layu, dan pohon itu akan selalu dikenang Na sampai ke anak cucu, karena pohon itu seperti sejarah bagi umat manusia.....ooh iya, hadiah selanjutnya ada di sebelah ya dan satu lagi,terima kasih ya Na...</p>
+					</div>
+					<div>
+						<img src="../pemandangan/rumah.jpg" alt=""/>
+						<h1>28 Februari 2022</h1>
+						<p>pasti kalian pernah berpikir "kenapa ya, dia bisa melakukan banyak kelebihan dalam hidupnya, bisa melakukan segala hal seperti dia tidak punya kekurangan apa pun". pertanyaan itu selalu melekat dipikiran ku, rasa iri itu pasti, tapi kalian tau? bahwa seseorang yang belum memiliki bakat/kelebihan apa pun itu berarti dia masih bermimpi,</p>
+					</div>
+					<div>
+						<!-- <img src="images/2.jpg" alt="" />
+						<h1>Animated Portfolio Gallery</h1> -->
+						<p> dia masih belum bangun dari tidurnya, maka dari itu bangun lah, buat mimpi itu jadi kenyataan, mereka yang sudah bangun sebelum kamu, sudah merasakan sakit yang luar biasa dalam hidup mereka, mereka harus melawan rasa malas, hinaan, di caci maki habis-habisan, di tinggal pergi oleh orang terdekat, hanya untuk mewujudkan satu mimpi saja. takut itu pasti, takut gagal, takut dihina, takut berada di titik terendah, takut, takut dan takut, yang pasti kalian harus tau, takutlah jika kalian berhenti dari mimpi itu, tidak apa jika kalian lelah, lelah bukan segala-galanya, istirahatlah, tapi jangan pernah kamu berhenti dari mimpi mu itu, dan jika engkau sudah berhasil, kw pasti akan menangis mengingat masalalu mu....</p>
+					</div>
+					<!-- <dcc iv>
+						<img src="images/3.jpg" alt="" />
+						<h1>Annotation Overlay Effect</h1>
+						<p>Today we will create a simple overlay effect to display annotations in e.g. portfolio
+							items of a web designers portfolio. We got the idea from the wonderful
+							portfolio of www.rareview.com where Flash is used to create the
+							effect. We will use jQuery.</p>
+						<a href="" target="_blank" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div> -->
+					<!-- <div>
+						<img src="images/4.jpg" alt="" />
+						<h1>Bubbleriffic Image Gallery</h1>
+						<p>In this tutorial we will create a bubbly image gallery that
+							shows your images in a unique way. The idea is to show the
+							thumbnails of albums in a rounded fashion allowing the
+							user to scroll them automatically by moving the mouse.
+							Clicking on a thumbnail will zoom in a big circle and
+							the full image which will be automatically resized to
+							fit into the screen.</p>
+						<a href="" target="_blank" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div> -->
+					<!-- <div>
+						<img src="images/5.jpg" alt="" />
+						<h1>Collapsing Site Navigation</h1>
+						<p>Today we will create a collapsing menu that contains vertical
+							navigation bars and a slide out content area. When hovering
+							over a menu item, an image slides down from the top and a
+							submenu slides up from the bottom. Clicking on one of the
+							submenu items will make the whole menu collapse like a card
+							deck and the respective content area will slide out.</p>
+						<a href="" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div> -->
+					<!-- <div>
+						<img src="images/6.jpg" alt="" />
+						<h1>Custom Animation Banner</h1>
+						<p>In today’s tutorial we will be creating a custom animation banner with jQuery.
+							The idea is to have different elements in a banner that will
+							animate step-wise in a custom way.</p>
+						<p>We will be using the jQuery Easing Plugin and the jQuery 2D
+							Transform Plugin to create some nifty animations.</p>
+						<a href="" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div> -->
+					<!-- <div>
+						<img src="images/7.jpg" alt="" />
+						<h1>Full Page Image Gallery</h1>
+						<p>In this tutorial we are going to create a stunning full page
+							gallery with scrollable thumbnails and a scrollable full
+							screen preview. The idea is to have a thumbnails bar at
+							the bottom of the page that scrolls automatically when
+							the user moves the mouse. When a thumbnail is clicked,
+							it moves to the center of the page and the full screen
+							image is loaded in the background.</p>
+						<a href="" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div> -->
+					<!-- <div>
+						<img src="images/8.jpg" alt="" />
+						<h1>Hover Slide Effect</h1>
+						<p>Today we will create a neat effect with some images using
+							jQuery. The main idea is to have an image area with several
+							images that slide out when we hover over them, revealing
+							other images. The sliding effect will be random, i.e.
+							the images will slide to the top or bottom, left or
+							right, fading out or not. When we click on any area,
+							all areas will slide their images out.</p>
+						<a href="" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div> -->
+					<!-- <div>
+						<img src="images/9.jpg" alt="" />
+						<h1>Merging Image Boxes</h1>
+						<p>Today we will show you a nice effect for images with jQuery.
+							The idea is to have a set of rotated thumbnails that,
+							once clicked, animate to form the selected image.
+							You can navigate through the images with previous
+							and next buttons and when the big image gets clicked
+							it will scatter into the little box shaped thumbnails again.</p>
+						<a href="" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div> -->
+					<!-- <div>
+						<img src="images/10.jpg" alt="" />
+						<h1>Compact News Previewer</h1>
+						<p>Today we will create a news previewer that let’s you
+							show your latest articles or news in a compact way.
+							The news previewer will show some list of articles
+							on the left side and the preview of the article with a
+							longer description on the right. Once a news on the left
+							is clicked, the preview will slide in.</p>
+						<a href="" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div> -->
+					<!-- <div>
+						<img src="images/11.jpg" alt="" />
+						<h1>Overlay Effect Menu</h1>
+						<p>In this tutorial we are going to create a simple menu
+							that will stand out once we hover over it by covering
+							everything except the menu with a dark overlay.
+							The menu will stay white and a submenu area will
+							expand. We will create this effect using jQuery.</p>
+						<a href="" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div> -->
+					<!-- <div>
+						<img src="images/12.jpg" alt="" />
+						<h1>Polaroid Photobar Gallery</h1>
+						<p>In this tutorial we are going to create an image gallery
+							with a Polaroid look. We will have albums that will expand
+							to sets of slightly rotated thumbnails that pop out on hover.
+							The full image will slide in from the bottom once a thumbnail
+							is clicked. In the full image view the user can navigate
+							through the pictures or simply choose another thumbnail
+							to be displayed.</p>
+						<a href="" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div> -->
+					<!-- <div>
+						<img src="images/13.jpg" alt="" />
+						<h1>Pull Out Content Panel</h1>
+						<p>In this tutorial we will create a content panel that 
+							slides out at a predefined scroll position. It will 
+							reveal a teaser with related content and it can be 
+							expanded to full page size to show more. A custom 
+							slider allows to scroll through many items in the 
+							panel.</p>
+						<a href="" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div> -->
+					<!-- <div>
+						<img src="images/14.jpg" alt="" />
+						<h1>Thumbnails Navigation Gallery</h1>
+						<p>In this tutorial we are going to create an extraordinary
+							gallery with scrollable thumbnails that slide out from a
+							navigation. We are going to use jQuery and some CSS3
+							properties for the style. The main idea is to have a
+							menu of albums where each item will reveal a horizontal
+							bar with thumbnails when clicked.</p>
+						<a href="" class="article">ARTICLE</a>
+						<a href="" class="demo">DEMO</a>
+					</div> -->
+				</div>
+			</div>
+		</div>
+        <!-- musik -->
+<div class="musik">
+    <!-- Button trigger modal -->
+<button type="button" class="buttontop btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  <img src="../music.gif" alt="">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-lg-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Music</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body warna">
+
+
+        <div class="wrapper">
+    <div class="top-bar">
+      <i class="material-icons">expand_more</i>
+      <span>Now Playing</span>
+      <i class="material-icons">more_horiz</i>
+    </div>
+    <div class="img-area">
+      <img src="" alt="">
+    </div>
+    <div class="song-details">
+      <p class="name"></p>
+      <p class="artist"></p>
+    </div>
+    <div class="progress-area">
+      <div class="progress-bar">
+        <audio id="main-audio" src=""></audio>
+      </div>
+      <div class="song-timer">
+        <span class="current-time">0:00</span>
+        <span class="max-duration">0:00</span>
+      </div>
+    </div>
+    <div class="controls">
+      <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+      <i id="prev" class="material-icons">skip_previous</i>
+      <div class="play-pause">
+        <i class="material-icons play">play_arrow</i>
+      </div>
+      <i id="next" class="material-icons">skip_next</i>
+      <i id="more-music" class="material-icons">queue_music</i>
+    </div>
+    <div class="music-list">
+      <div class="header">
+        <div class="row">
+          <i class= "list material-icons">queue_music</i>
+          <span>Music list</span>
+        </div>
+        <i id="close" class="material-icons">close</i>
+      </div>
+      <ul>
+        <!-- here li list are coming from js -->
+      </ul>
+    </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- end musik -->
+<!-- navbar -->
+<nav class="navbar fixed-bottom navbar-light bg-light">
+    
+  <div class="container-fluid justify-content-center">
+	<a class="back btn btn-secondary"href="../front.html"><img src="https://img.icons8.com/material/48/000000/long-arrow-left--v2.png"/></a>
+    <button class="btn btn-primary boxpos" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+        <img class="menu" src="../menu.png" alt="">
+    </button>
+    <!-- 2 -->
+   
+    
+    <!-- end -->
+    <!-- canvas1 -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+        <h5 id="offcanvasTopLabel">
+            Catatan
+        </h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <!-- <a class="btn btn-primary" href="book/bookname.html" role="button">Catatan</a> -->
+        <a class="btn btn-danger" href="../book.html" role="button">Kejutan</a>
+		<a class="btn btn-warning" href="../Galeri.html">Nana</a>
+		<a class="btn btn-warning"href="../galerisena.html">Ari Sena</a>
+	</div>
+    </div>
+<!-- end canvas -->
+
+    </div>
+  <!-- </div> -->
+  
+</nav>
+        <script type="text/javascript">
+			$(function() {
+				var $mybook 		= $('#mybook');
+				var $bttn_next		= $('#next_page_button');
+				var $bttn_prev		= $('#prev_page_button');
+				var $loading		= $('#loading');
+				var $mybook_images	= $mybook.find('img');
+				var cnt_images		= $mybook_images.length;
+				var loaded			= 0;
+				 
+				$mybook_images.each(function(){
+					var $img 	= $(this);
+					var source	= $img.attr('src');
+					$('<img/>').load(function(){
+						++loaded;
+						if(loaded == cnt_images){
+							$loading.hide();
+							$bttn_next.show();
+							$bttn_prev.show();
+							$mybook.show().booklet({
+								name:               null,                            //  
+								width:              800,                             //  
+								height:             500,                             //   
+								speed:              600,                             //  
+								direction:          'LTR',                           //  
+								                           //  
+								next:               $bttn_next,          			//  
+								prev:               $bttn_prev,          			//  
+								                       
+							});
+							Cufon.refresh();
+						}
+					}).attr('src',source);
+				});
+				
+			});
+        </script>
+	<script src="js/music-list.js"></script>
+	<script src="js/script.js"></script>
+    </body>
+ 
+</html>

@@ -1,0 +1,348 @@
+body {
+  margin-bottom: 1200px;
+  /* overflow-y: hidden; */
+}
+/* nav */
+
+/* end nav */
+.opening {
+  /* overflow-y: hidden; */
+  position: relative;
+  /* width: 200%;
+    height: 70vh; */
+  z-index: 10;
+}
+.opening .bell {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+.opening img {
+  border: 1px solid;
+  position: absolute;
+  right: 0px;
+  /* padding: 0px 300px; */
+  width: 100%;
+  z-index: 9999;
+  height: 100vh;
+}
+.container {
+  /* border: 1px solid; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* Nama */
+.name {
+  /* border: 1px solid; */
+  text-align: center;
+  display: grid;
+  align-items: center;
+  position: relative;
+}
+.nana {
+  font-size: 65px;
+  /* border: 1px solid; */
+  font-weight: bolder;
+  margin-top: 40%;
+  padding: 0px 40px;
+  color: white;
+}
+.blob {
+  z-index: -1;
+  position: absolute;
+  top: 12px;
+  width: 100%;
+}
+.blob1 {
+  position: absolute;
+  left: -100px;
+  width: 200px;
+}
+.blob2 {
+  position: absolute;
+  right: 10px;
+  width: 200px;
+}
+.blob3 {
+  position: absolute;
+  bottom: -150px;
+  width: 200px;
+}
+
+/* picture */
+.box-picture {
+  /* border: 1px solid; */
+  position: relative;
+}
+.one-pic {
+  width: 250px;
+  position: absolute;
+  z-index: 0;
+  top: 30px;
+  transition: 0.9s;
+  filter: blur(3px);
+}
+.one-pic:hover {
+  filter: inherit;
+}
+.two-pic {
+  width: 300px;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  z-index: 2;
+  box-shadow: 2px 5px 12px 1px;
+  transition: 0.9s;
+  filter: blur(3px);
+}
+.two-pic:hover {
+  filter: inherit;
+}
+.three-pic {
+  z-index: 3;
+  width: 400px;
+  position: absolute;
+  top: 250px;
+  box-shadow: 2px 5px 12px 1px;
+}
+
+/* slide 2 */
+.slide-2 {
+  /* border: 1px solid; */
+  height: 500px;
+  /* background: linear-gradient(
+    320deg,
+    rgba(193, 236, 251, 1) 13%,
+    rgba(105, 212, 244, 1) 92%
+  ); */
+  /* background: linear-gradient(
+    320deg,
+    rgba(193, 236, 251, 1) 33%,
+    rgba(105, 212, 244, 1) 92%
+  ); */
+  background: linear-gradient(
+    320deg,
+    rgba(201, 243, 255, 1) 15%,
+    rgba(117, 199, 223, 1) 70%,
+    rgba(112, 219, 255, 1) 100%
+  );
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: end;
+}
+.percobaan {
+  /* border: 1px solid; */
+  display: grid;
+  align-items: center;
+}
+.percobaan1 {
+  text-align: center;
+  color: white;
+}
+.box-old {
+  /* border: 1px solid; */
+  display: grid;
+  align-items: flex-end;
+  position: relative;
+}
+.old {
+  /* border: 1px solid; */
+  box-shadow: 10px 5px 20px 3px;
+  border-radius: 10px;
+  padding: 60px 60px;
+  /* filter: opacity(50%); */
+  position: absolute;
+  font-size: 120px;
+  left: 400px;
+  bottom: 50px;
+  color: transparent;
+  color: white;
+  /* color: white; */
+}
+
+/* slide 3 */
+.slide-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+.bobble img {
+  width: 50%;
+}
+/* animate */
+
+/* end animate */
+.say {
+  border: 1px solid;
+}
+
+/* book */
+input {
+  display: none;
+}
+.container-foto {
+  width: 100%;
+  text-align: center;
+}
+.title-foto {
+  font-weight: normal;
+  font-size: 35px;
+  position: relative;
+  margin: 40px 0;
+}
+.title-foto::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: crimson;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    width: 100px;
+  }
+  50% {
+    width: 200px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+.top-content {
+  background-color: rgb(243, 243, 243);
+  width: 90%;
+  margin: 0 auto 20px auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px lightgray;
+}
+h3 {
+  height: 100%;
+  background-color: lightgray;
+  line-height: 60px;
+  padding: 0 50px;
+  color: white;
+}
+label {
+  display: inline-block;
+  height: 100%;
+  margin: 0 20px;
+  line-height: 60px;
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+  transition: 0.5s;
+}
+label:hover {
+  color: black;
+}
+.foto-gallery {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.pic {
+  position: relative;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px lightgray;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.pic::before {
+  content: "asdasdasd";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: -100px;
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.2s;
+  z-index: 1;
+}
+.pic::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+.pic:hover::after {
+  height: 100%;
+}
+.pic:hover::before {
+  margin-top: 0;
+  opacity: 1;
+}
+
+#cek1:checked ~ .container-foto .foto-gallery .pic {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: 0.5s;
+}
+#cek2:checked ~ .container-foto .foto-gallery .Family {
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+#cek2:checked ~ .container-foto .foto-gallery .child,
+#cek2:checked ~ .container-foto .foto-gallery .place {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
+}
+
+#cek3:checked ~ .container-foto .foto-gallery .Family {
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+#cek3:checked ~ .container-foto .foto-gallery .child,
+#cek3:checked ~ .container-foto .foto-gallery .Family {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
+}
+
+#cek4:checked ~ .container-foto .foto-gallery .Family {
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+#cek4:checked ~ .container-foto .foto-gallery .child,
+#cek4:checked ~ .container-foto .foto-gallery .child {
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
+}
+/* end book */
